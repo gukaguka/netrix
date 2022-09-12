@@ -9,7 +9,7 @@ const App =() => {
 
 
 
-Function App(){
+
   
 fetch('https://netwrix-test.herokuapp.com', {
   method: 'POST',
@@ -28,5 +28,3 @@ fetch('https://netwrix-test.herokuapp.com', {
 
 export default App;
 
-
-import React from 'react';
