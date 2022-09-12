@@ -1,31 +1,32 @@
 import React from 'react';
-import { useEffect } from 'react';
-import axios from 'axios';
 
 
 
 
-function App(){
 
-  useEffect(() => {
-
-    async function fetchData(){
-
-   await axios.post('https://netwrix-test.herokuapp.com/', {req: 'MSP Partner'})
-    .then(function (response) {
-       console.log(response);
-      })
-     .catch(function (error) {
-       console.log(error);
-      });
+const App =() => {
 
 
-    }
 
-    fetchData();
 
-  }, []);
+Function App(){
+  
+fetch('https://netwrix-test.herokuapp.com', {
+  method: 'POST',
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    parameter: 'hi',
+    
+  })
+});
+
 
 }
 
 export default App;
+
+
+import React from 'react';
