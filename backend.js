@@ -20,7 +20,7 @@ app.post("/api", (request, response) => {
   const data = request.body;
   response.json({
     status: "success",
-    query: data
+    query: data,
    
   });
 });
