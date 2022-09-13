@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-async function App { 
+async function App() { 
  
   
   
