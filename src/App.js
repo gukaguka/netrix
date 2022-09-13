@@ -6,13 +6,12 @@ import React from 'react';
 
 const App =() => { 
 
-
-
+async function fetchQuery(){
 
 var formData = new FormData();
 formData.append('x', 'Distributor');
   
-fetch('https://netwrix-test.herokuapp.com', {
+await fetch('https://netwrix-test.herokuapp.com', {
   method: 'POST',
   headers: {
     'Accept': 'application/json',
@@ -20,6 +19,11 @@ fetch('https://netwrix-test.herokuapp.com', {
   },
   body: formData
 });
+
+}
+
+fetchQuery();
+
 
 
 }
