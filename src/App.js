@@ -3,12 +3,12 @@ import React from 'react';
 
 
 
-async function App() { 
+function App() { 
  
   
   
-
-   const data = "Distributor";
+async function fetching(){
+ const data = "Distributor";
           const options = {
             method: "POST",
             headers: {
@@ -20,6 +20,11 @@ async function App() {
           const json = await response.json();
           console.log(json);
 
+}
+ const send = true;
+ if(send == true){
+  fetching();
+ }
 
 
 }
