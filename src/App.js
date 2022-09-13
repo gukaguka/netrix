@@ -16,7 +16,7 @@ async function App {
             },
             body: JSON.stringify(data),
           };
-          const response = await fetch("https://netwrix-test.herokuapp.com", options);
+          const response = await fetch("/api", options);
           const json = await response.json();
           console.log(json);
 
