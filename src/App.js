@@ -4,7 +4,7 @@ import React from 'react';
 
 
 
-const App =() => {
+const App =() => { 
 
 
 
@@ -21,7 +21,7 @@ fetch('https://netwrix-test.herokuapp.com', {
     'parameter': 'Distributor',
     
   })
-}).then(response => response.json());
+});
 
 
 }
