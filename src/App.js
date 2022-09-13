@@ -22,8 +22,7 @@ formData.append('x', 'Distributor');
             throw new Error("HTTP status " + resp.status);
         }
         return resp.json();
-    })   
-};;
+    });
 
 
 
