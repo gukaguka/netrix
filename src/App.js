@@ -9,7 +9,8 @@ const App =() => {
 
 
 
-
+var formData = new FormData();
+formData.append('x', 'Distributor');
   
 fetch('https://netwrix-test.herokuapp.com', {
   method: 'POST',
@@ -17,10 +18,7 @@ fetch('https://netwrix-test.herokuapp.com', {
     'Accept': 'application/json',
     'Content-Type': 'application/json'
   },
-  body: JSON.stringify({
-    'parameter': 'Distributor',
-    
-  })
+  body: formData
 });
 
 
