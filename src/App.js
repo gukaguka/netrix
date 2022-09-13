@@ -18,7 +18,7 @@ fetch('https://netwrix-test.herokuapp.com', {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({
-    'par': 'Distributor',
+    'parameter': 'Distributor',
     
   })
 }).then(response => response.json());
