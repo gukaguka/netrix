@@ -5,9 +5,9 @@ const port = process.env.PORT || 80;
 app.listen(port, () => {console.log(`Server is listening on port ${PORT}...`)})
 app.use(express.static('public'));
 var con = mysql.createConnection({  
-  host: "eu-cdbr-west-03.cleardb.net",  
-  user: "bb818b55e33341",  
-  password: "ad94e10e"  
+  host: "us-cdbr-east-06.cleardb.net",  
+  user: "b71b1925d129c3",  
+  password: "9a48780c"  
 });  
 con.connect(function(err) {  
   if (err) throw err;  
