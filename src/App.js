@@ -3,26 +3,22 @@ import React from 'react';
 
 
 
+async function App { 
+ 
+  
+  
 
-const App =() => { 
-
-
-var formData = new FormData();
-formData.append('x', 'Distributor');
-
-  fetch('https://netwrix-test.herokuapp.com', {
-  method: 'POST',
-  headers: {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json'
-  },
-  body: formData
-}).then(resp => {
-        if (!resp.ok) {
-            throw new Error("HTTP status " + resp.status);
-        }
-        return resp.json();
-    });
+   const data = "Distributor";
+          const options = {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          };
+          const response = await fetch("https://netwrix-test.herokuapp.com", options);
+          const json = await response.json();
+          console.log(json);
 
 
 
